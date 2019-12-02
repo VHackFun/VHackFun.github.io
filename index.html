@@ -1,4 +1,51 @@
 <!DOCTYPE html>
 <html>
- Hello World!
+<head>
+<meta charset="UTF-8">
+<link rel="icon" href="http://www.vhackfun.top//HKF.png" type="image/x-icon"/>
+<title>V客俱乐部</title>
+<style>
+
+.search {
+    width: 200px;
+    height: 20px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: absolute;
+	
+}
+</style>
+</head>
+<body>
+<img src="http://www.vhackfun.top//HKF.png">
+<div>
+ Uname:<input type="text" class="search" id="username"  value=""><br/>
+ Pssword:<input type="password" class="search" id="password" value=""><br/>
+<button type="button" id="DJ" name="DJ">login</button>
+</div>
+</body>
+ <script >
+        document.getElementById('DJ').addEventListener('click',function(){
+        var username = document.getElementById("username").value;
+        var password = document.getElementById("password").value;
+        if(username== 'VHackFun') {
+            if(password == 'laov') {
+                alert("验证成功，正在前往老V的网站");
+                window.location.href='http://www.vhackfun.top//STW/主页.html';
+            } 
+            else if(password == 'hx'){
+                alert("验证成功，正在前往老何和老谢的网站");
+                window.location.href='http://www.vhackfun.top//HX/oneweb/home.html'
+                  }
+            else {
+                alert("密码错误，请重新输入");
+            }
+        }
+        else {
+            alert("用户名错误，请重新输入！");     
+        }
+    });
+ </script>
 </html>
