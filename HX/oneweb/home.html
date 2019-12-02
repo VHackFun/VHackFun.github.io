@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ambition world</title>
+<link href="home.css" rel="stylesheet" type="text/css">
+<link rel="icon" href="../image/logo.ico">
+<script>
+	
+	function over(){
+	document.getElementById('search').src="../image/Search2.png";
+}
+	function out(){
+	document.getElementById('search').src="../image/Search1.png";
+}
+window.onload=function(){
+	var cs1=document.getElementById('cs1');
+	var cs2=document.getElementById('cs2');
+	var cs3=document.getElementById('cs3');
+	var num1=0;
+	var num2=1;
+	var num3=2;
+	var abc1=setInterval(lunbo1,2000);
+	var abc2=setInterval(lunbo2,2000);
+	var abc3=setInterval(lunbo3,2000);
+	function lunbo1(){
+	if(num1<3){
+		num1++;
+		
+	}else{
+		num1=1;
+	}
+	cs1.src="../image/CS GO/CS GO"+num1+".jpg";
+	}
+	function lunbo2(){
+	if(num2<3){
+		num2++;
+		
+	}else{
+		num2=1;
+	}
+	cs2.src="../image/CS GO/CS GO"+num2+".jpg";
+	}
+	function lunbo3(){
+	if(num3<3){
+		num3++;
+		
+	}else{
+		num3=1;
+	}
+	cs3.src="../image/CS GO/CS GO"+num3+".jpg";
+	}
+}
+</script>
+<header>
+	<section class="nav">
+    <div class="logo"><a href="#"><img src="../image/logo.png" width="236" height="70" alt="Ambition World"/></a></div>
+	<img src="../image/Search1.png" width="70" height="70" alt="" id="search" onmouseover="over()" onmouseout="out()"/>
+		<form>
+			<input type="text" name="search" id="searchtext">
+		</form>
+		<ul>
+			<li><a href="../threeweb/注册.html">注册</a></li>
+        	<li><a href="../threeweb/登录.html">登录</a></li>
+        	<li><a href="../threeweb/游戏.html">游戏</a></li>
+        	<li><a href="home.html">首页</a></li>
+		</ul>
+	  	</section>
+    
+</header>
+</head>
+<body>
+<h1 id="bt">Ambition World</h1>
+
+<div class="div1">
+
+  <div class="div1a">
+	  <a href="../twoweb/CS GO.html">
+		<div class="div1a1">
+			<img src="../image/CS GO/CS GO1.jpg" width="400" height="700" alt="cs go1" id="cs1" class="ima"/>
+		</div>
+		<div class="div1a1">
+			<img src="../image/CS GO/CS GO2.jpg" width="400" height="700" alt="cs go2" id="cs2" class="ima"/>
+		</div>
+		<div>
+			<img src="../image/CS GO/CS GO3.jpg" id="cs3" width="400" height="700" alt="cs go3" class="ima"/>
+	  </div>
+		  </a>
+	</div>
+	
+</div>
+<div class="div2">
+	<h1 id="jj" >游戏简介</h1>
+	<div class="div2a">
+		<div class="divc">
+			<img class="img1" src="../image/DOTA 2/1558540422511.png" width="800" height="500" alt=""/>
+		</div>
+		<p align="center" class="p1">
+		  <a href="../twoweb/DOTA2.html" class="a1">刀塔 2<br>Dota 2<br><br></a>
+			平台：PC<br><br>
+			开发商：Valve<br><br>
+			最早发售：2013-07-09<br><br>
+			综合评分 9.1分<br>
+			免费
+		</p>
+	</div>
+	<div class="div2a">
+		<div class="divb">
+    <img class="img2" src="../image/CS GO/1558540929031.png" width="800" height="500" alt="" /> 
+  </div>
+		<p align="center" class="p1">
+		  <a href="../twoweb/CS GO.html" class="a1">反恐精英：全球攻势<br>Counter-Strike：Global Offensive<br><br></a>
+			平台：PC / PS3 / Xbox 360<br><br>
+			开发商：Valve<br><br>
+			最早发售：2012-08-21<br><br>
+			综合评分 8.4分<br>
+			免费
+		</p>
+	</div>
+	<div class="div2a">
+		<div class="divc">
+		<img class="img1" src="../image/彩虹六号围攻.jpg" width="800" height="500" alt="" />
+		</div>
+		<p align="center" class="p1">
+		  <a href="../twoweb/彩虹六号.html" class="a1">彩虹六号：围攻<br>Tom Clancy's Rainbow Six Siege<br><br></a>
+			平台：PC / PS4 / Xboxone<br><br>
+			开发商：Ubisoft<br><br>
+			最早发售：2015-12-01<br><br>
+			综合评分 8.3分<br>
+			原价￥88 历史最低 ￥40
+		</p>
+	</div>
+	<div class="div2a">
+		<div class="divb">
+    <img class="img2" src="../image/warframe.jpg" width="800" height="500" alt="" /> 
+    </div>
+		<p align="center" class="p1">
+		  <a href="../twoweb/WARFRAME.html" class="a1">星际战甲<br>warframe<br><br></a>
+			平台：PC / NS / PS4 / Xboxone<br><br>
+			开发商：Digital Extremes<br><br>
+			最早发售：2013-03-26<br><br>
+			综合评分 7.7分<br>
+			免费
+		</p>
+	</div>
+</div>
+</body>
+	<div id="d">
+	<p id="c">资料出处<a  class="a1" href="https://gouhuo.qq.com/" target="_blank">@篝火营地</a><br>软件1802班期末设计</p>
+	</div>
+</html>

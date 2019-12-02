@@ -1,0 +1,434 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>省途网为你而省</title>
+<link rel="stylesheet" href="ca.css">
+<style>
+a{text-decoration:none}
+a:hover{text-decoration:none}
+*{padding:0px; margin:0 auto}
+.container {
+    height: 70px;
+    width: 330px;
+	float:left;
+	margin-left:50px;
+	margin-top:35px
+}
+.parent {
+    position: relative;
+}
+
+#dak{
+ width: 700px; height: 410px;
+            float:left;
+        }
+
+.search {
+    width: 300px;
+    height: 40px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: absolute;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background: url(%E6%94%BE%E5%A4%A7%E9%95%9C.png) ;
+    top: 6px;
+    left: 285px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#main {  
+    margin: auto;  
+    text-align: center;  
+    width: 300px;  
+    height: 200px;   
+    background-color:#FFFFFF;  
+}  
+#show_time0,#show_time {  
+width:300px;
+height:100px;
+    color:#FFFFFF;
+} 
+
+
+</style>
+</head>
+
+<body>
+<div style="width:1920px; float:left">
+<div style=" float:left;width:1920px;height:100px; background-color:#0CF">
+  <div style=" float:left; height:30px; width:280px; margin-top:35px; margin-left:30px">
+   <div style=" float:left; height:30px; width:32px">
+    <img src="小地球已扣.png"; style=" width:30px; height:30px"/>
+   </div>
+   <div style=" float:left; height:30px; width:65px">
+    <p style="color:#FFF; margin-top:5px">语言选择</p>
+   </div>
+   <div style=" float:left; height:30px; width:150px; margin-top:5px">
+    <form>
+<select name="cars">
+<option value="简体中文">简体中文</option>
+<option value="繁體中文">繁體中文</option>
+<option value="English" selected="selected">English</option>
+<option value="にほんご ">にほんご </option>
+<option value="한국어 ">한국어 </option>
+</select>
+    </form>
+   </div>   
+  </div>
+  <div style="width:300px; height:100px; float:left">
+   <div style="width:300px; height:40px; float:left;margin-top:5px">
+   <font color="#FFFFFF" size="6" face="微软雅黑">省钱省时更省力</font>
+   </div>
+    <div style="width:200px; height:40px; float:left;margin-top:5px; margin-left:100px">
+   <font color="#FFFFFF" size="4">省途网，为你而省</font>
+   </div>
+  </div>
+  <div class="container">
+    <form action="" class="parent">
+        <input type="text" class="search" placeholder="搜索景点">
+        <input type="button" name="" id="" class="btn">
+    </form>
+  </div>
+  <div style="float:left; width:400px; height:100px">
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >吃长沙</font>
+   </a>
+   </div>
+   </div>
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >桃饱网</font>
+   </a>
+   </div>
+   </div>
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >黄金体验</font>
+   </a>
+   </div>
+   </div>
+  </div>
+  <div style=" float:left;width:280px; height:100px">
+   <div style="float:left; width:120px; height:25px; margin-top:30px; margin-left:140px">
+   <a href="javascript:openLogin();">
+   <font color="#FFFFFF" size="4" face="微软雅黑" >用户登陆</font>
+   </a>
+   <div id=win style="display:none; POSITION:absolute; left:50%; top:50%; width:400px; height:250px; margin-left:-300px; margin-top:-200px; border:1px solid #888; background:url(%E7%99%BB%E9%99%86%E6%A1%86%E8%83%8C%E6%99%AF.jpg); background-size:100%;text-align:center">登陆省途网<br>
+   <form style="width:300px; height:40px">
+账号: <input type="text" name="账号"><br>
+密码: <input type="text" name="密码">
+   </form>
+   <div style="width:50px; height:30px; margin-top:150px">
+   <a href="javascript:closeLogin();">登陆</a>
+   </div>
+   </div>
+<script>
+function openLogin(){
+   document.getElementById("win").style.display=""; 
+}
+function closeLogin(){
+   document.getElementById("win").style.display="none";
+}
+</script>
+   </div>
+   <div style="float:left; width:200px; height:20px;  margin-left:60px">
+    <div id="main">  
+    <div id="show_time0" style="">
+    <script>
+ setInterval("show_time0.innerHTML=new Date().toLocaleString()",1000);  
+    </script>
+    </div>
+    </div>
+   </div>
+  </div>
+  <div style=" float:right;height:100px; width:250px">
+  <a href="主页.html">
+   <img src="LOGO2.png"  width="250px" height="100px"/>
+  </a>
+  </div>
+</div>
+<div style=" float:left; width:1520px; height:620px; background-color:#0FF; margin-top:2px; margin-left:200px;">
+ <div style=" float:left; width:1512px; height:612px; background-color:#FFF; margin-left:4px; margin-top:4px">
+ <div style=" float:left; width:700px; height:612px; margin-left:20px ">
+  <div style=" float:left; width:700px; height:410px; background-color:#0CF; margin-top:20px">
+  <div id="dak">
+  <div id="t1" >
+                <div id="p1">
+                    <img src="威尼斯水城1.jpg" width="700px" height="410px">
+                    <img src="威尼斯水城1.2.jpg" width="700px" height="410px">
+                    <img src="威尼斯水城1.3.jpg" width="700px" height="410px">
+                    <img src="威尼斯水城1.4.jpg" width="700px" height="410px">
+                    <img src="威尼斯水城1.5.jpg" width="700px" height="410px">
+                </div>
+            </div>
+            </div>
+
+  </div>
+  
+  <div style=" float:left; width:700px; height:152px; background-color:#0CF; margin-top:10px">
+  
+  
+  <div style=" float:left; width:694px; height:148px; background-color:#FFF; margin-top:2px; margin-left:2px">
+  <img src="威尼.PNG" width="690px" height="102px" / style="margin-top:20px">
+  </div>
+  </div>
+ </div>
+ <div style=" float:left; width:752px; height:572px; margin-left:20px; background-color:#FFF; margin-top:20px">
+  <h1 style=" text-align:center">威尼斯水城</h1>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  
+ <p style="margin-left:100px;"><h3>景点地址:</h3>
+意大利东北部、亚得里亚海</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<p style="margin-left:100px;"><h3>开放时间：</h3>
+夏季：9:45-17:00；冬季：9:30-16:00。 注意：不得着无袖衫、穿短裤入内。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+ <p style="margin-left:100px;"><h3>服务承诺：</h3>如实描述     低价保障    入园保障      特殊退订保障</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p style="text-align:center ">威尼斯长期是独立的水上共和国，政权由总督和议会共同掌握，兼有专制政体和共和政体的特色。</p>
+ </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:40px; margin-left:206px; background-color:#09F; margin-top:20px; ">
+ <div style="float:left; width:300px; height:38px; margin-left:2px; background-color:#FFF; margin-top:1px; text-align:center;">
+ <h2><a href="#jdjj">景点简介</a></h2>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+ <h2><a href="#ls">人文历史/风俗习惯</a></h2> 
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#ts">特产推荐</a></h2>
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#jd">当地酒店</a></h2>
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#dp">用户点评</a></h2>
+  </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:3680px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3676px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="jdjj" id="jdjj"></a>景点简介:</h1>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:1200px; background-color:#FFF; margin-left:100px;">
+  <h2>美誉：“因水而生，因水而美，因水而兴”</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">威尼斯，是意大利北部威尼托大区首府，威尼斯省省会，世界著名的历史文化名城，威尼斯画派的发源地，其建筑、绘画、雕塑、歌剧等在世界有着极其重要的地位和影响。
+威尼斯水上城市是文艺复兴的精华，世界上唯一没有汽车的城市，上帝将眼泪流在了这里，却让它更加晶莹和柔情，就好像一个漂浮在碧波上浪漫的梦。</p>
+  <img src="威尼斯水城2.jpg"
+     width="1000px" height="600px"  style="margin-left:120px;"/>
+     <img src="威尼斯水城2.2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+     <img src="威尼斯水城2.3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+     <img src="威尼斯水城2.4.jpg" width="1000px" height="300px"  style="margin-left:120px; margin-top:20px;"/>
+       <img src="威尼斯水城2.5.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+        <img src="威尼斯水城2.6.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:710px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:706px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:320px; height:45px; background-color:#3FF">
+  <h1><a name="ls" id="ls"></a>人文历史/风俗习惯:</h1>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:300px; background-color:#FFF; margin-left:100px;">
+  <h2>人文历史:</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">威尼斯一度曾握有全欧洲最强大的人力、物力和权势。威尼斯的历史相传开始于公元453年；当时这个地方的农民和渔民为逃避酷似刀兵的游牧民族，转而避往亚德里亚海中的这个小岛。。威尼斯的西北角有一条四公里长的长堤与大陆相通，它不但是意大利重
+威尼斯
+威尼斯
+要的港口，也是一座文化艺术古城。威尼斯及其泻湖，由118个岛屿组成。</p>
+
+ </div>
+ <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:200px; background-color:#FFF; margin-left:100px;">
+  <h2>风俗习惯:</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">意大利人90%以上居民信奉天主教。如果有人打喷嚏,旁边的人马上会说:“萨路德(Salute!)(祝你健康)”。另外,当着别人打喷嚏或咳嗽,被认为是不礼貌和讨嫌的事,所以本人要马上对旁边的人表示“对不起”。据说是因为欧洲曾有过因重感流行而置死人命的先例,所以感冒在意大利人眼中也十分恐怖。 意大利人热情好客,待人接物彬彬有礼。在正式场合,穿着十分讲究。见面礼是握手或招手示意;对长者、有地位和不太熟悉的人,要称呼他的姓,。</p>
+  </div>
+</div>
+</div>
+<div style=" float:left; width:1506px; height:1010px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:1006px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+   <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="ts" id="ts"></a>特产推荐:</h1>
+   <div style="float:left; width:1300px; height:300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">番茄酱、威尼斯奶酪、假面面具
+    <img src="威尼斯奶酪.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+    <p>&nbsp;</p>
+    <p style="font-size:20px;">葡萄红勤酒
+　　全世界最有名的意大利葡萄酒红勤酒就是在佛罗伦萨诞生的。其中带有黑鸡标志的古典红勤酒是用佛罗伦萨与锡耶纳之间的古老的葡萄园里的葡萄酿成的。
+</p>
+   </div>
+  </div>
+</div>
+ </div>
+ <div style=" float:left; width:1506px; height:3080px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3076px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="jd" id="jd"></a>当地酒店:</h1>
+    <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+     <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>注意事项：入住时间：12:00以后      离店时间：12:00以前，不准携带儿童，宠物入住</h2>
+       <img src="奥斯卡1.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+        <img src="奥斯卡1.2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+         <img src="奥斯卡1.3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+          <img src="奥斯卡1.4.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>设施/服务:</h2>  <div style="float:right; width:300px; height:300px; background-color:#FFF; margin-right:300px; margin-top:10px;">
+  <b>一家宾馆,共有4间客房,这是其中之一｡ 
+ <p>&nbsp;</p>- 每天,不同的早餐 ，送餐
+ <p>&nbsp;</p>- 1-2位客人(3位客人不提供)
+ <p>&nbsp;</p>独立房间:
+<p>&nbsp;</p>有自己的独立房间，与他人共享客厅等空间
+<p>&nbsp;</p>入住/退房:
+<p>&nbsp;</p>入住时间 12:00后 · 退房时间 12:00
+
+</b>
+                    </div>
+      
+  <b style="float:left; margin-left:200px;">基础设施
+
+无线网络 <p>&nbsp;</p> 烘干机
+
+生活必需品  <p>&nbsp;</p> 暖气
+
+洗衣机  <p>&nbsp;</p> 厨房用品
+
+厨房  <p>&nbsp;</p> 早餐
+
+床和浴室  <p>&nbsp;</p> 吹风机
+
+衣架  <p>&nbsp;</p> 洗发水
+
+安全设施  <p>&nbsp;</p> 灭火器
+
+一氧化碳报警器  <p>&nbsp;</p> 行李寄存
+
+前台保险柜
+</b>
+
+     </div>
+   </div>
+   
+ </div>
+ </div>
+ <div style=" float:left; width:1506px; height:3630px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3626px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+    <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+    <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>酒店：奥斯卡酒店</h2>
+  <img src="奥斯卡2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="奥斯卡2.2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="奥斯卡2.3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="奥斯卡2.4.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="奥斯卡2.5.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2>设施/服务:</h2>  <div style="float:right; width:300px; height:300px; background-color:#FFF; margin-right:300px; margin-top:10px;">
+<b>整套房子/公寓:独享整个房源，无需与房东或他人共住
+<p>&nbsp;</p>入住/退房，入住时间: 15:00后 ·
+<p>&nbsp;</p>退房时间: 12:00
+<p>&nbsp;</p>自助入住:通过密码锁自助入住
+</b>
+     </div>
+      <b style="float:left; margin-left:200px;">基础设施
+
+无线网络 <p>&nbsp;</p> 熨斗
+
+有线电视 <p>&nbsp;</p> 生活必需品
+
+书桌/工作区域 <p>&nbsp;</p> 综合设施
+
+电梯 <p>&nbsp;</p> 厨房用品
+
+厨房 <p>&nbsp;</p> 基本厨具
+
+盘子和餐具 <p>&nbsp;</p>冰箱
+
+炉灶 <p>&nbsp;</p> 房客使用权限
+
+密码锁 <p>&nbsp;</p> 独立入口
+
+    </div>
+  </div>
+  </div>
+  <div style=" float:left; width:1506px; height:710px; margin-left:6px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:706px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="dp" id="dp"></a>用户点评:</h1>
+  <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+   <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <b>  8分 <p>&nbsp;</p>
+威尼斯是水上城市，挺好的，。房屋紧凑，风景优美 <p>&nbsp;</p>
+Emmy9421   2019-09-21 11:32</b>
+ <p>&nbsp;</p> <p>&nbsp;</p>
+   5分<p>&nbsp;</p>
+경복궁은 한국에서 유명한 유적인데요 표가격도 싸다<p>&nbsp;</p>
+王刘长老   2019-09-18 22:57
+<p>&nbsp;</p><p>&nbsp;</p>
+4分 <p>&nbsp;</p>
+他是水上乐园，建议不要带小孩游玩 <p>&nbsp;</p>Abby223   2019-09-18 09:49
+<p>&nbsp;</p><p>&nbsp;</p>
+ 分<p>&nbsp;</p>
+一路坐船游玩，沿途风景挺好，而且当地人民很热情<p>&nbsp;</p>
+M34****9559   2019-09-15 16:41
+            </div>
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Portal2</title>
+		<link type="text/css" href="导航栏.css" rel="stylesheet">
+		<link rel="icon" href="../image/logo.ico">
+		<style type="text/css">
+head{
+	width: 100%;
+}
+body{
+	background-color: rgba(0,0,0,0.7);
+	background-image: url( "../image/DOTA 2/1558540623490.png");
+	background-attachment: fixed;
+	height: 1000px;
+	color: white;
+	font-family: "微软雅黑", sans-serif;
+}
+#body1{
+	width: 70%;
+	margin: auto;
+}
+/* Style the tab */
+div.tab {
+	margin-top: 35px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+	color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: white;
+	color: #FFCC33;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display:none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+			.tabcontent1{
+    			padding: 6px 12px;
+    			-webkit-animation: fadeEffect 1s;
+    			animation: fadeEffect 1s;
+			}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.content{
+	margin-top: 30px;
+	width:100%;
+	border:hidden;
+}
+.tyeper{
+	margin:20px 10px;
+	padding: 2px 10px;
+	border: hidden;
+	display: inline-block;
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgba(58,58,58,1.00);
+	
+}
+.introduce{
+	width: 67%;
+	color: rgba(255,255,255,0.7);
+	border-bottom:2px groove #CCCCCC;
+}
+.right{
+	width: 300px;
+	height: 380px;
+	float: right;
+	padding: 10px;
+	text-align: center;
+	border:2px groove #CCCCCC;
+}
+.te{
+	color:#FFCC33;
+	font-size: 30px;
+	margin-right: 20px;
+}
+.tez{
+	color:#FFCC33;
+	font-size: 30px;
+	margin-right: 440px;
+}
+.pf{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.80);
+}
+.pf1{
+	width: 80px;
+	height: 100px;
+	float: left;
+	margin: 10px 35px;
+}
+	</style>
+		<script type="text/javascript">
+				window.onload=function(){
+					document.getElementById("one").click();
+				}
+	function over(){
+	document.getElementById('search').src="../image/Search2.png";
+}
+	function out(){
+	document.getElementById('search').src="../image/Search1.png";
+}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";	
+	}
+		</script>
+	<section class="nav">
+    <div class="logo"><a href="#"><img src="../image/logo.png" width="236" height="70" alt="Ambition World"/></a></div>
+	<img src="../image/Search1.png" width="70" height="70" alt="" id="search" onmouseover="over()" onmouseout="out()"/>
+		<form>
+			<input type="text" name="search" id="searchtext">
+		</form>
+		<ul>
+			<li><a href="../threeweb/注册.html">注册</a></li>
+        	<li><a href="../threeweb/登录.html">登录</a></li>
+        	<li><a href="../threeweb/游戏.html">游戏</a></li>
+        	<li><a href="../oneweb/home.html">首页</a></li>
+		</ul>
+	  	</section>
+	</head>
+	<body >
+		<div id="body1">
+	<h1>传送门2</h1>
+	<p>Portal2</p>
+	<div class="tab">
+	  	<button class="tablinks" onclick="openCity(event, 'London')" id="one">详情</button>
+	  	<button class="tablinks" onclick="openCity(event, 'Paris')">评测</button>
+	  	<button class="tablinks" onclick="openCity(event, 'Tokyo')">攻略</button>
+	  	<button class="tablinks" onclick="openCity(event, 'me')">资讯</button>
+	</div>
+	<div id="London" class="tabcontent">
+		<img src="../image/PORTAL 2/1558542171636.png" width="100%" height="500" alt=""/>
+	  <div class="content">
+	  	<div class="right">
+	  		<h2>发售信息<br><br></h2>
+	  		<p>平台:PC / PS3 / Xbox<br><br></p>
+	  		<p>开发商:Valve Software<br><br></p>
+	  		<p>发行商:Valve Software<br><br></p>
+	  		<p>最早发售:2011-04-19<br><br></p>
+	  		<p>支持语言:日语 英语 简体中文 繁体中文 法语 葡萄牙语 意大利语 德语 西班牙语<br><br></p>
+	  		<span class="te">￥37</span><span>历史最低:7￥</span>
+	  	</div>
+	  	<span>类型：动作</span><span>&nbsp;&nbsp;&nbsp;人数：1人</span>
+	  	<p><span class="tyeper">科幻</span></p>
+	  	<p class="introduce">《传送门2》是由Valve Software研发的独具风格的第一人称射击游戏和益智解谜游戏的结合体，发行于2011年。 玩家手中的武器（传送枪）并非为射杀敌人而存在，而是用于在墙壁、地板上发射打开传送门，在蓝门与橙门之间穿梭。 通过这种方式来解开各种机关和谜题，对于玩家将是一次全新挑战。</p><p align="justify">综合评分&nbsp;&nbsp;&nbsp;<span class="tez">9.4</span>Steam&nbsp;&nbsp;&nbsp;<span class="te">NO.4</span></p>	
+	  </div>
+ 	</div>
+ 	
+  	<div id="Paris" class="tabcontent">
+		<img src="../image/PORTAL 2/1558542124308.png" width="700" height="368" alt=""/>
+<div class="right">
+	  		<h2>发售信息<br><br></h2>
+	  		<p>平台:PC / PS3 / Xbox<br><br></p>
+	  		<p>开发商:Valve Software<br><br></p>
+	  		<p>发行商:Valve Software<br><br></p>
+	  		<p>最早发售:2011-04-19<br><br></p>
+	  		<p>支持语言:日语 英语 简体中文 繁体中文 法语 葡萄牙语 意大利语 德语 西班牙语<br><br></p>
+	  		<span class="te">￥37</span><span>历史最低:7￥</span>
+	  	</div>
+		<h1>媒体评分</h1>
+		<div class="pf">
+			<div class="pf1"><h2><span class="te">9</span>/10</h2><br><h3 align="center">VGtime</h3></div>
+			<div class="pf1"><h2><span class="te">37</span>/40</h2><br><h3 align="center">Fami通</h3></div>
+			<div class="pf1"><h2><span class="te">95</span>/100</h2><br><h3 align="center">Gamerank</h3></div>
+		</div>
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+	  	<h3>攻略</h3>
+	  	<p>敬请期待</p>
+	</div>
+	<div id="me" class="tabcontent">
+	  	<h3>资讯</h3>
+	  	<p>敬请期待</p>
+	</div>
+			</div>
+	</body>
+	<div id="d">
+	<p id="c">资料出处<a  class="a1" href="https://gouhuo.qq.com/" target="_blank">@篝火营地</a><br>软件1802班期末设计</p>
+	</div>
+</html>

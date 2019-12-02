@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>注册</title>
+		<link type="text/css" rel="stylesheet" href="../twoweb/导航栏.css">
+		<link rel="icon" href="../image/logo.ico">
+		<style>
+body{
+	background-image: url("../image/The witcher3/1558102924263_mh1558313705623.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+}
+.box{
+	background:rgba(0,0,0,0.7);
+	width:300px;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	text-align:center;
+}
+.box h1{
+	color:white;
+	text-transform:uppercase;
+	font-weight:500;
+	
+}
+.box input[type ="text"],.box input[type = "password"],.box input[type = "tel"],.box input[type = "email"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3FF;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;	
+}
+.box input[type ="text"]:focus,.box input[type = "password"]:focus,.box input[type = "tel"]:focus,.box input[type = "email"]:focus{
+	width:280px;
+	border-color:#0F0;
+}
+.box input[type ="submit"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid  #0F0;
+	padding:14px 40px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;	
+}
+.box input[type ="submit"]:hover{
+	background:#0F0;
+}	
+		</style>
+		<script>
+			function over(){
+	document.getElementById('search').src="../image/Search2.png";
+}
+	function out(){
+	document.getElementById('search').src="../image/Search1.png";
+}</script>
+	</head>
+	<section class="nav">
+    <div class="logo"><a href="#"><img src="../image/logo.png" width="236" height="70" alt="Ambition World"/></a></div>
+	<img src="../image/Search1.png" width="70" height="70" alt="" id="search" onmouseover="over()" onmouseout="out()"/>
+		<form>
+			<input type="text" name="search" id="searchtext">
+		</form>
+		<ul>
+			<li><a href="../threeweb/注册.html">注册</a></li>
+        	<li><a href="../threeweb/登录.html">登录</a></li>
+        	<li><a href="../threeweb/游戏.html">游戏</a></li>
+        	<li><a href="../oneweb/home.html">首页</a></li>
+		</ul>
+	  	</section>
+	<body>
+		<div class="box">
+		<input type="text" name="username" maxlength="10" placeholder="用户名称" required="required"/>
+		<input type="password" name="pw" maxlength="15" placeholder="用户密码" required="required"/>
+		<input type="tel" name="Tel" maxlength="11" placeholder="电话" required="required"/>
+		<input type="email" name="Email" placeholder="邮箱地址" required="required"/>
+		<p align="center"><input type="submit" value="注册" class="submit"/></p>
+		</div>
+	</body>
+</html>

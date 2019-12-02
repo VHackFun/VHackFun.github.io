@@ -1,0 +1,431 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>省途网为你而省</title>
+<link rel="stylesheet" href="ca.css">
+<style>
+a{text-decoration:none}
+a:hover{text-decoration:none}
+*{padding:0px; margin:0 auto}
+.container {
+    height: 70px;
+    width: 330px;
+	float:left;
+	margin-left:50px;
+	margin-top:35px
+}
+.parent {
+    position: relative;
+}
+
+#dak{
+ width: 700px; height: 410px;
+            float:left;
+        }
+
+.search {
+    width: 300px;
+    height: 40px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: absolute;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background: url(%E6%94%BE%E5%A4%A7%E9%95%9C.png) ;
+    top: 6px;
+    left: 285px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#main {  
+    margin: auto;  
+    text-align: center;  
+    width: 300px;  
+    height: 200px;   
+    background-color:#FFFFFF;  
+}  
+#show_time0,#show_time {  
+width:300px;
+height:100px;
+    color:#FFFFFF;
+} 
+
+
+</style>
+</head>
+
+<body>
+<div style="width:1920px; float:left">
+<div style=" float:left;width:1920px;height:100px; background-color:#0CF">
+  <div style=" float:left; height:30px; width:280px; margin-top:35px; margin-left:30px">
+   <div style=" float:left; height:30px; width:32px">
+    <img src="小地球已扣.png"; style=" width:30px; height:30px"/>
+   </div>
+   <div style=" float:left; height:30px; width:65px">
+    <p style="color:#FFF; margin-top:5px">语言选择</p>
+   </div>
+   <div style=" float:left; height:30px; width:150px; margin-top:5px">
+    <form>
+<select name="cars">
+<option value="简体中文">简体中文</option>
+<option value="繁體中文">繁體中文</option>
+<option value="English" selected="selected">English</option>
+<option value="にほんご ">にほんご </option>
+<option value="한국어 ">한국어 </option>
+</select>
+    </form>
+   </div>   
+  </div>
+  <div style="width:300px; height:100px; float:left">
+   <div style="width:300px; height:40px; float:left;margin-top:5px">
+   <font color="#FFFFFF" size="6" face="微软雅黑">省钱省时更省力</font>
+   </div>
+    <div style="width:200px; height:40px; float:left;margin-top:5px; margin-left:100px">
+   <font color="#FFFFFF" size="4">省途网，为你而省</font>
+   </div>
+  </div>
+  <div class="container">
+    <form action="" class="parent">
+        <input type="text" class="search" placeholder="搜索景点">
+        <input type="button" name="" id="" class="btn">
+    </form>
+  </div>
+  <div style="float:left; width:400px; height:100px">
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >吃长沙</font>
+   </a>
+   </div>
+   </div>
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >桃饱网</font>
+   </a>
+   </div>
+   </div>
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >黄金体验</font>
+   </a>
+   </div>
+   </div>
+  </div>
+  <div style=" float:left;width:280px; height:100px">
+   <div style="float:left; width:120px; height:25px; margin-top:30px; margin-left:140px">
+   <a href="javascript:openLogin();">
+   <font color="#FFFFFF" size="4" face="微软雅黑" >用户登陆</font>
+   </a>
+   <div id=win style="display:none; POSITION:absolute; left:50%; top:50%; width:400px; height:250px; margin-left:-300px; margin-top:-200px; border:1px solid #888; background:url(%E7%99%BB%E9%99%86%E6%A1%86%E8%83%8C%E6%99%AF.jpg); background-size:100%;text-align:center">登陆省途网<br>
+   <form style="width:300px; height:40px">
+账号: <input type="text" name="账号"><br>
+密码: <input type="text" name="密码">
+   </form>
+   <div style="width:50px; height:30px; margin-top:150px">
+   <a href="javascript:closeLogin();">登陆</a>
+   </div>
+   </div>
+<script>
+function openLogin(){
+   document.getElementById("win").style.display=""; 
+}
+function closeLogin(){
+   document.getElementById("win").style.display="none";
+}
+</script>
+   </div>
+   <div style="float:left; width:200px; height:20px;  margin-left:60px">
+    <div id="main">  
+    <div id="show_time0" style="">
+    <script>
+ setInterval("show_time0.innerHTML=new Date().toLocaleString()",1000);  
+    </script>
+    </div>
+    </div>
+   </div>
+  </div>
+  <div style=" float:right;height:100px; width:250px">
+  <a href="主页.html">
+   <img src="LOGO2.png"  width="250px" height="100px"/>
+  </a>
+  </div>
+</div>
+<div style=" float:left; width:1520px; height:620px; background-color:#0FF; margin-top:2px; margin-left:200px;">
+ <div style=" float:left; width:1512px; height:612px; background-color:#FFF; margin-left:4px; margin-top:4px">
+ <div style=" float:left; width:700px; height:612px; margin-left:20px ">
+  <div style=" float:left; width:700px; height:410px; background-color:#0CF; margin-top:20px">
+  <div id="dak">
+  <div id="t1" >
+                <div id="p1">
+                    <img src="1.PNG" width="700px" height="410px">
+                    <img src="2.PNG" width="700px" height="410px">
+                    <img src="3.PNG" width="700px" height="410px">
+                    <img src="4.PNG" width="700px" height="410px">
+                    <img src="5.PNG" width="700px" height="410px">
+                </div>
+            </div>
+            </div>
+
+  </div>
+  
+  <div style=" float:left; width:700px; height:152px; background-color:#0CF; margin-top:10px">
+  
+  
+  <div style=" float:left; width:694px; height:148px; background-color:#FFF; margin-top:2px; margin-left:2px">
+  <img src="小图.PNG" width="690px" height="102px" / style="margin-top:20px">
+  </div>
+  </div>
+ </div>
+ <div style=" float:left; width:752px; height:572px; margin-left:20px; background-color:#FFF; margin-top:20px">
+  <h1 style=" text-align:center">景福宫</h1>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  
+ <p style="margin-left:100px;"><h3>景点地址:</h3>
+대한민국 서울특별시 종로구 종로1.2.3.4가동 사직로 161</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<p style="margin-left:100px;"><h3>开放时间：</h3>
+1月-2月、11月-12月9:00-17:00，最后入场时间16:00；3月-5月、9月-10月9:00-18:00，最后入场时间17:00；6月-8月9:00-18:30，最后入场时间17:30；周二休馆。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+ <p style="margin-left:100px;"><h3>服务承诺：</h3>如实描述     低价保障    入园保障      特殊退订保障</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p style="text-align:center ">还没去北京游览故宫，先来首尔看了昌德宫和景福宫，据说韩国的皇宫比故宫小很多，而景福宫已经让我觉得很宏伟了，故宫一定要去参观一下了</p>
+ </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:40px; margin-left:206px; background-color:#09F; margin-top:20px; ">
+ <div style="float:left; width:300px; height:38px; margin-left:2px; background-color:#FFF; margin-top:1px; text-align:center;">
+ <h2><a href="#jdjj">景点简介</a></h2>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+ <h2><a href="#ls">人文历史/风俗习惯</a></h2> 
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#ts">特产推荐</a></h2>
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#jd">当地酒店</a></h2>
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#dp">用户点评</a></h2>
+  </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:3680px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3676px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="jdjj" id="jdjj"></a>景点简介:</h1>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:1200px; background-color:#FFF; margin-left:100px;">
+  <h2>特色1：《拥抱太阳的月亮》取景地</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">景福宫坐落于繁华的首尔市中心的一角，是朝鲜建国初期建造的首座宫殿。景福宫一年四季美景各异，春有樱花，夏有绿树，秋有银杏，冬有白雪。《大长今》、《屋塔房王世子》、《来自星星的你》等韩剧曾在此取景。景福宫东面是建春门，西面是迎秋门，北面是神武门，南面是光化门。光化门是景福宫的正门，有着精巧的工艺、巧妙的结构及壮丽的外观。守门将交接仪式很值得观看，还原了朝鲜时代换岗仪式的场景。</p>
+  <img src="35020u000000iz4529E87.jpg"
+     width="1000px" height="600px"  style="margin-left:120px;"/>
+     <img src="景福宫1.2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/><img src="景福宫1.3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/><img src="景福宫1.4.jpg" width="1000px" height="300px"  style="margin-left:120px; margin-top:20px;"/>
+       <img src="景福宫1.5.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+        <img src="景福宫1.6.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:710px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:706px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:320px; height:45px; background-color:#3FF">
+  <h1><a name="ls" id="ls"></a>人文历史/风俗习惯:</h1>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:300px; background-color:#FFF; margin-left:100px;">
+  <h2>人文历史:</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">景福宫（韩语：경복궁；英语：Gyeongbokgung Palace），是朝鲜半岛历史上最后一个统一王朝——朝鲜王朝（李氏朝鲜）的正宫（法宫）。位于朝鲜王朝国都汉城（今韩国首尔），又因位于城北部，故又称“北阙”，是首尔五大宫之首，朝鲜王朝前期的政治中心。
+景福宫始建于1395年（太祖洪武二十八年），历经多次破坏和重建。王宫得名于《诗经》中“君子万年，介尔景福”中“景福”二字。王宫面积与规制严格遵循与宗主国中国的宗藩关系，为亲王规制的郡王府，所有建筑均以丹青之色来区别于中国皇宫的黄色。占地面积占地12.6万坪（57.75公顷），呈正方形，南面是正门光化门，东为建春门，西为迎秋门，北为神武门。
+1910年日本吞并朝鲜半岛。1926年，日本在景福宫前建造朝鲜总督府。朝鲜日治时期，景福宫的大多建筑都相继遭到拆除，仅保留正殿勤政殿、庆会楼等象征意义的建筑物。
+1995年韩国光复50周年之际，金泳三政府以恢复本国传统文化，“清除日本统治时期象征”为由拆除日占时期建筑，原址开始大规模复建景福宫及其附属建筑。2010年8月，韩国再次复建光化门，由原先所谓“去中国化”的谚文匾额恢复为传统的汉文牌匾。</p>
+
+ </div>
+ <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:200px; background-color:#FFF; margin-left:100px;">
+  <h2>风俗习惯:</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">韩国与中国一样被誉为“礼仪之邦”，文化与礼仪交集，除了特色节日习俗之外，韩国人在生活中也体现着韩国人的特色生活习俗。韩国人与中国人一样，多数信奉佛教，崇尚儒家文化，因此在很多方面与中国相似。吃饭的时候也用筷子汤匙，喝酒的时候一定要侧身表示礼貌，见到长辈要弯腰行礼，跟中国一样，他们也过春节、端午节、中秋节等节日。</p>
+  </div>
+</div>
+</div>
+<div style=" float:left; width:1506px; height:1010px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:1006px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+   <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="ts" id="ts"></a>特产推荐:</h1>
+   <div style="float:left; width:1300px; height:300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">与中医理论相反，韩国有“反季进补”的说法，由于夏季人体水分和营养随汗液快速代谢，从而容易体虚，因此韩国人多在夏季进食参鸡汤。而作为韩国代表美食之一的参鸡汤，店面繁多，今天为大家介绍的是在韩国可谓家喻户晓的老店——“土俗村”参鸡汤。
+  </p>
+    <img src="景福宫特产.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+    <p>&nbsp;</p>
+    <p style="font-size:20px;">土俗村参鸡汤店内不仅有传统参鸡汤、烤全鸡、乌骨参鸡汤、还推出了加入一百年山参培养根和高丽人参共同炖制的山参培养根参鸡汤、山参培养根乌骨鸡汤，在营养上更上一层楼。除了这些，店内还有海鲜葱饼、辣烧鸡汤（2~3人份）、漆鸡汤、辣炖安康鱼（2人分/3人份）等。并且店内还有自己独家制作的人参酒，并对外出售，好酒的人千万不要错过。
+</p>
+   </div>
+  </div>
+</div>
+ </div>
+ <div style=" float:left; width:1506px; height:3080px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3076px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="jd" id="jd"></a>当地酒店:</h1>
+    <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+     <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>民宿：100岁,韩国传统家庭, 1-2人, 私人厕所</h2>
+       <img src="景福宫民宿1.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+        <img src="景福宫民宿2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+         <img src="景福宫民宿3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+          <img src="景福宫民宿4.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>设施/服务:</h2>  <div style="float:right; width:300px; height:300px; background-color:#FFF; margin-right:300px; margin-top:10px;">
+  <b>一家宾馆,共有4间客房,这是其中之一｡ 
+ <p>&nbsp;</p>- 每天,不同的韩国传统早餐 
+ <p>&nbsp;</p>- 1-2位客人(3位客人不提供)
+ <p>&nbsp;</p>独立房间:
+<p>&nbsp;</p>有自己的独立房间，与他人共享客厅等空间
+<p>&nbsp;</p>入住/退房:
+<p>&nbsp;</p>入住时间 15:00后 · 退房时间 11:00
+
+</b>
+                    </div>
+      
+  <b style="float:left; margin-left:200px;">基础设施
+
+无线网络 <p>&nbsp;</p> 烘干机
+
+生活必需品  <p>&nbsp;</p> 暖气
+
+洗衣机  <p>&nbsp;</p> 厨房用品
+
+厨房  <p>&nbsp;</p> 早餐
+
+床和浴室  <p>&nbsp;</p> 吹风机
+
+衣架  <p>&nbsp;</p> 洗发水
+
+安全设施  <p>&nbsp;</p> 灭火器
+
+一氧化碳报警器  <p>&nbsp;</p> 烟雾报警器
+
+急救包
+</b>
+
+     </div>
+   </div>
+   
+ </div>
+ </div>
+ <div style=" float:left; width:1506px; height:3630px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3626px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+    <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+    <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>酒店：明洞★Basecamp803★市景阁楼+Free WiFi</h2>
+  <img src="景福宫酒店1.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="景福宫酒店2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="景福宫酒店3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="景福宫酒店4.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+  <img src="景福宫酒店5.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2>设施/服务:</h2>  <div style="float:right; width:300px; height:300px; background-color:#FFF; margin-right:300px; margin-top:10px;">
+<b>整套房子/公寓:独享整个房源，无需与房东或他人共住
+<p>&nbsp;</p>入住/退房，入住时间: 15:00后 ·
+<p>&nbsp;</p>退房时间: 12:00
+<p>&nbsp;</p>自助入住:通过密码锁自助入住
+</b>
+     </div>
+      <b style="float:left; margin-left:200px;">基础设施
+
+无线网络 <p>&nbsp;</p> 熨斗
+
+有线电视 <p>&nbsp;</p> 生活必需品
+
+书桌/工作区域 <p>&nbsp;</p> 综合设施
+
+电梯 <p>&nbsp;</p> 厨房用品
+
+厨房 <p>&nbsp;</p> 基本厨具
+
+盘子和餐具 <p>&nbsp;</p>冰箱
+
+炉灶 <p>&nbsp;</p> 房客使用权限
+
+密码锁 <p>&nbsp;</p> 独立入口
+
+    </div>
+  </div>
+  </div>
+  <div style=" float:left; width:1506px; height:710px; margin-left:6px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:706px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="dp" id="dp"></a>用户点评:</h1>
+  <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+   <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <b>  5分 <p>&nbsp;</p>
+外观有点像故宫，内里是席地而坐，空地上看到了正六品正七品的石牌，很多人租借了韩服进场拍照，但是非常抱歉我对宫殿兴致缺缺。 <p>&nbsp;</p>
+Emmy9421   2019-09-21 11:32</b>
+ <p>&nbsp;</p> <p>&nbsp;</p>
+   5分<p>&nbsp;</p>
+경복궁은 한국에서 유명한 유적인데요 표가격도 싸다<p>&nbsp;</p>
+王刘长老   2019-09-18 22:57
+<p>&nbsp;</p><p>&nbsp;</p>
+4分 <p>&nbsp;</p>
+韩国的小故宫 比起我们的故宫 的确不是一点档次的事 不过也挺有特色 <p>&nbsp;</p>Abby223   2019-09-18 09:49
+<p>&nbsp;</p><p>&nbsp;</p>
+ 5分<p>&nbsp;</p>
+预计花2个小时参观，但是买好门票进入景福宫后会发现2个小时实在不足够。占地很大，虽然里面剩下/重建后的建筑物没有超级多，但是要走一圈也要花很长时间，再加上仔细观看展板上的介绍，等拍照的时间（人太多），下次再来的时候会预留半天。<p>&nbsp;</p>
+M34****9559   2019-09-15 16:41
+            </div>
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

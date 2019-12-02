@@ -1,0 +1,26 @@
+﻿#p1{
+     width: 9999px;
+     height: 9999px;
+     animation: 15s dho infinite;
+ }
+#p1 img{
+    float: left;
+}
+#t1{
+    width:700px;
+    height:410px;
+    overflow:hidden;
+}
+
+@keyframes dho {
+    0%{}
+    20%{transform: translateX(0px)}
+    30%{transform: translateX(-700px)}
+    40%{transform: translateX(-700px)}
+    50%{transform: translateX(-1400px)}
+    60%{transform: translateX(-1400px)}
+    70%{transform: translateX(-2100px)}
+    80%{transform: translateX(-2100px)}
+    90%{transform: translateX(-2800px)}
+    100%{transform: translateX(-2800px)}
+}

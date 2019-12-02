@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>老滚5</title>
+		<link type="text/css" href="导航栏.css" rel="stylesheet">
+		<link rel="icon" href="../image/logo.ico">
+		<style type="text/css">
+head{
+	width: 100%;
+}
+body{
+	background-color: rgba(0,0,0,0.7);
+	background-image: url( "../image/DOTA 2/1558540623490.png");
+	background-attachment: fixed;
+	height: 1000px;
+	color: white;
+	font-family: "微软雅黑", sans-serif;
+}
+#body1{
+	width: 70%;
+	margin: auto;
+}
+/* Style the tab */
+div.tab {
+	margin-top: 35px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+	color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: white;
+	color: #FFCC33;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display:none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+			.tabcontent1{
+    			padding: 6px 12px;
+    			-webkit-animation: fadeEffect 1s;
+    			animation: fadeEffect 1s;
+			}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+.content{
+	margin-top: 30px;
+	width:100%;
+	border:hidden;
+}
+.tyeper{
+	margin:20px 10px;
+	padding: 2px 10px;
+	border: hidden;
+	display: inline-block;
+	border-radius: 20px;
+	text-align: center;
+	background-color: rgba(58,58,58,1.00);
+	
+}
+.introduce{
+	width: 67%;
+	color: rgba(255,255,255,0.7);
+	border-bottom:2px groove #CCCCCC;
+}
+.right{
+	width: 300px;
+	height: 380px;
+	float: right;
+	padding: 10px;
+	text-align: center;
+	border:2px groove #CCCCCC;
+}
+.te{
+	color:#FFCC33;
+	font-size: 30px;
+	margin-right: 20px;
+}
+.tez{
+	color:#FFCC33;
+	font-size: 30px;
+	margin-right: 440px;
+}
+.pf{
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.80);
+}
+.pf1{
+	width: 80px;
+	height: 100px;
+	float: left;
+	margin: 10px 35px;
+}
+	</style>
+		<script type="text/javascript">
+				window.onload=function(){
+					document.getElementById("one").click();
+				}
+	function over(){
+	document.getElementById('search').src="../image/Search2.png";
+}
+	function out(){
+	document.getElementById('search').src="../image/Search1.png";
+}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";	
+	}
+		</script>
+	<section class="nav">
+    <div class="logo"><a href="#"><img src="../image/logo.png" width="236" height="70" alt="Ambition World"/></a></div>
+	<img src="../image/Search1.png" width="70" height="70" alt="" id="search" onmouseover="over()" onmouseout="out()"/>
+		<form>
+			<input type="text" name="search" id="searchtext">
+		</form>
+		<ul>
+			<li><a href="../threeweb/注册.html">注册</a></li>
+        	<li><a href="../threeweb/登录.html">登录</a></li>
+        	<li><a href="../threeweb/游戏.html">游戏</a></li>
+        	<li><a href="../oneweb/home.html">首页</a></li>
+		</ul>
+	  	</section>
+	</head>
+	<body >
+		<div id="body1">
+	<h1>上古卷轴5：天际</h1>
+	<p>The Elder Scrolls V: Skyrim</p>
+	<div class="tab">
+	  	<button class="tablinks" onclick="openCity(event, 'London')" id="one">详情</button>
+	  	<button class="tablinks" onclick="openCity(event, 'Paris')">评测</button>
+	  	<button class="tablinks" onclick="openCity(event, 'Tokyo')">攻略</button>
+	  	<button class="tablinks" onclick="openCity(event, 'me')">资讯</button>
+	</div>
+	<div id="London" class="tabcontent">
+		<img src="../image/The elder scrolls V Shyrim/1558543325000_mh1558543582390.jpg" width="100%" height="500" alt=""/>
+	  <div class="content">
+	  	<div class="right">
+	  		<h2>发售信息<br><br></h2>
+	  		<p>平台:PC / NS / PS3 / Xbox 360<br><br></p>
+	  		<p>开发商:Bethesda<br><br></p>
+	  		<p>发行商:Bethesda Softworks<br><br></p>
+	  		<p>最早发售:2011-11-11<br><br></p>
+	  		<p>支持语言:日语 英语<br><br></p>
+	  		<span class="te">￥68</span><span>历史最低:68￥</span>
+	  	</div>
+	  	<span>类型：角色扮演</span><span>&nbsp;&nbsp;&nbsp;人数：1人</span><span>&nbsp;&nbsp;&nbsp;通关：35小时</span>
+	  	<p><span class="tyeper">魔法</span><span class="tyeper">奇幻</span><span class="tyeper">开放世界</span></p>
+	  	<p class="introduce">《上古卷轴5：天际》是动作角色扮演游戏系列《上古卷轴》的最新作，由Bethesda开发制作。这部游戏设定在《上古卷轴4：湮没》的200年之后，玩家将扮演着人身龙魂的英雄龙裔，踏上将邪恶巨龙奥杜因驱逐至时间尽头的征途。玩家可以在天际做一名杀人无踪的刺客，或者是法师，再或者工作于闹市的盗贼，甚至是杀人不眨眼的雇佣兵。游戏中没有职业限制，阵营也没有加入限制，玩家可以加入游戏中的全部阵营（内战两方和吸血鬼DLC两方只能选择一个加入）。游戏和《上古卷轴4》拥有同等大小的地图。在地图之上，给玩家提供了超过120个不重复的地下迷宫，以及9个规模宏大的城市供玩家探索。游戏是典型的沙盒式游戏，玩家除了进行主线任务，还可以在天际大地上随意闯荡，创造一部只属于自己的史诗。</p><p align="justify">综合评分&nbsp;&nbsp;&nbsp;<span class="tez">9分</span></p>	
+	  </div>
+ 	</div>
+ 	
+  	<div id="Paris" class="tabcontent">
+		<img src="../image/The elder scrolls V Shyrim/1558543272911.png" width="700" height="368" alt=""/>
+	<div class="right">
+	  		<h2>发售信息<br><br></h2>
+	  		<p>平台:PC / NS / PS3 / Xbox 360<br><br></p>
+	  		<p>开发商:Bethesda<br><br></p>
+	  		<p>发行商:Bethesda Softworks<br><br></p>
+	  		<p>最早发售:2011-11-11<br><br></p>
+	  		<p>支持语言:日语 英语<br><br></p>
+	  		<span class="te">￥68</span><span>历史最低:68￥</span>
+	  	</div>
+		<h1>媒体评分</h1>
+		<div class="pf">
+			<div class="pf1"><h2><span class="te">9</span>/10</h2><br><h3 align="center">VGtime</h3></div>
+			<div class="pf1"><h2><span class="te">85</span>/100</h2><br><h3 align="center">Gamerank</h3></div>
+		</div>
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+	  	<h3>攻略</h3>
+	  	<p>敬请期待</p>
+	</div>
+	<div id="me" class="tabcontent">
+	  	<h3>资讯</h3>
+	  	<p>敬请期待</p>
+	</div>
+			</div>
+	</body>
+	<div id="d">
+	<p id="c">资料出处<a  class="a1" href="https://gouhuo.qq.com/" target="_blank">@篝火营地</a><br>软件1802班期末设计</p>
+	</div>
+</html>

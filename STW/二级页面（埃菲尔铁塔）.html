@@ -1,0 +1,443 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>省途网为你而省</title>
+<link rel="stylesheet" href="ca.css">
+<style>
+a{text-decoration:none}
+a:hover{text-decoration:none}
+*{padding:0px; margin:0 auto}
+.container {
+    height: 70px;
+    width: 330px;
+	float:left;
+	margin-left:50px;
+	margin-top:35px
+}
+.parent {
+    position: relative;
+}
+
+#dak{
+ width: 700px; height: 410px;
+            float:left;
+        }
+
+.search {
+    width: 300px;
+    height: 40px;
+    border-radius: 18px;
+    outline: none;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    position: absolute;
+}
+.btn {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    background: url(%E6%94%BE%E5%A4%A7%E9%95%9C.png) ;
+    top: 6px;
+    left: 285px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+#main {  
+    margin: auto;  
+    text-align: center;  
+    width: 300px;  
+    height: 200px;   
+    background-color:#FFFFFF;  
+}  
+#show_time0,#show_time {  
+width:300px;
+height:100px;
+    color:#FFFFFF;
+} 
+
+
+</style>
+</head>
+
+<body>
+<div style="width:1920px; float:left">
+<div style=" float:left;width:1920px;height:100px; background-color:#0CF">
+  <div style=" float:left; height:30px; width:280px; margin-top:35px; margin-left:30px">
+   <div style=" float:left; height:30px; width:32px">
+    <img src="小地球已扣.png"; style=" width:30px; height:30px"/>
+   </div>
+   <div style=" float:left; height:30px; width:65px">
+    <p style="color:#FFF; margin-top:5px">语言选择</p>
+   </div>
+   <div style=" float:left; height:30px; width:150px; margin-top:5px">
+    <form>
+<select name="cars">
+<option value="简体中文">简体中文</option>
+<option value="繁體中文">繁體中文</option>
+<option value="English" selected="selected">English</option>
+<option value="にほんご ">にほんご </option>
+<option value="한국어 ">한국어 </option>
+</select>
+    </form>
+   </div>   
+  </div>
+  <div style="width:300px; height:100px; float:left">
+   <div style="width:300px; height:40px; float:left;margin-top:5px">
+   <font color="#FFFFFF" size="6" face="微软雅黑">省钱省时更省力</font>
+   </div>
+    <div style="width:200px; height:40px; float:left;margin-top:5px; margin-left:100px">
+   <font color="#FFFFFF" size="4">省途网，为你而省</font>
+   </div>
+  </div>
+  <div class="container">
+    <form action="" class="parent">
+        <input type="text" class="search" placeholder="搜索景点">
+        <input type="button" name="" id="" class="btn">
+    </form>
+  </div>
+  <div style="float:left; width:400px; height:100px">
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >吃长沙</font>
+   </a>
+   </div>
+   </div>
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >桃饱网</font>
+   </a>
+   </div>
+   </div>
+   <div style="float:left; width:100px; height:80px; margin-left:30px; margin-top:10px">
+   <div style=" margin-top:30px">
+   <a href="">
+   <font color="#FFFFFF" size="5" >黄金体验</font>
+   </a>
+   </div>
+   </div>
+  </div>
+  <div style=" float:left;width:280px; height:100px">
+   <div style="float:left; width:120px; height:25px; margin-top:30px; margin-left:140px">
+   <a href="javascript:openLogin();">
+   <font color="#FFFFFF" size="4" face="微软雅黑" >用户登陆</font>
+   </a>
+   <div id=win style="display:none; POSITION:absolute; left:50%; top:50%; width:400px; height:250px; margin-left:-300px; margin-top:-200px; border:1px solid #888; background:url(%E7%99%BB%E9%99%86%E6%A1%86%E8%83%8C%E6%99%AF.jpg); background-size:100%;text-align:center">登陆省途网<br>
+   <form style="width:300px; height:40px">
+账号: <input type="text" name="账号"><br>
+密码: <input type="text" name="密码">
+   </form>
+   <div style="width:50px; height:30px; margin-top:150px">
+   <a href="javascript:closeLogin();">登陆</a>
+   </div>
+   </div>
+<script>
+function openLogin(){
+   document.getElementById("win").style.display=""; 
+}
+function closeLogin(){
+   document.getElementById("win").style.display="none";
+}
+</script>
+   </div>
+   <div style="float:left; width:200px; height:20px;  margin-left:60px">
+    <div id="main">  
+    <div id="show_time0" style="">
+    <script>
+ setInterval("show_time0.innerHTML=new Date().toLocaleString()",1000);  
+    </script>
+    </div>
+    </div>
+   </div>
+  </div>
+  <div style=" float:right;height:100px; width:250px">
+  <a href="主页.html">
+   <img src="LOGO2.png"  width="250px" height="100px"/>
+  </a>
+  </div>
+</div>
+<div style=" float:left; width:1520px; height:620px; background-color:#0FF; margin-top:2px; margin-left:200px;">
+ <div style=" float:left; width:1512px; height:612px; background-color:#FFF; margin-left:4px; margin-top:4px">
+ <div style=" float:left; width:700px; height:612px; margin-left:20px ">
+  <div style=" float:left; width:700px; height:410px; background-color:#0CF; margin-top:20px">
+  <div id="dak">
+  <div id="t1" >
+                <div id="p1">
+                    <img src="埃菲尔铁塔1.PNG" width="700px" height="410px">
+                    <img src="埃菲尔铁塔2.PNG" width="700px" height="410px">
+                    <img src="埃菲尔铁塔3.PNG" width="700px" height="410px">
+                    <img src="埃菲尔铁塔4.PNG" width="700px" height="410px">
+                    <img src="埃菲尔铁塔5.PNG" width="700px" height="410px">
+                </div>
+            </div>
+            </div>
+
+  </div>
+  
+  <div style=" float:left; width:700px; height:152px; background-color:#0CF; margin-top:10px">
+  
+  
+  <div style=" float:left; width:694px; height:148px; background-color:#FFF; margin-top:2px; margin-left:2px">
+  <img src="埃菲尔铁塔小图.PNG" width="690px" height="102px" / style="margin-top:20px">
+  </div>
+  </div>
+ </div>
+ <div style=" float:left; width:752px; height:572px; margin-left:20px; background-color:#FFF; margin-top:20px">
+  <h1 style=" text-align:center">埃菲尔铁塔</h1>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  
+ <p style="margin-left:100px;"><h3>景点地址:</h3>
+埃菲尔铁塔（法语：La Tour Eiffel；英语：the Eiffel Tower）矗立在塞纳河南岸法国巴黎的战神广场，巴黎</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+<p style="margin-left:100px;"><h3>开放时间：</h3>
+全年开放
+9:30-23:00。</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+ <p style="margin-left:100px;"><h3>服务承诺：</h3>如实描述     低价保障    入园保障      特殊退订保障</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p>&nbsp;</p>
+ <p style="text-align:center ">埃菲尔铁塔高300米，天线高24米，总高324米，铁塔是由很多分散的钢铁构件组成的——看起来就像一堆模型的组件。钢铁构件有18038个，重达10000吨，施工时共钻孔700万个，使用1.2万个金属部件，用铆钉250万个。除了四个脚是用钢筋水泥之外，全身都用钢铁构成，共用去熟铁7300吨。塔分三楼，分别在离地面57.6米、115.7米和276.1米处，其中一、二楼设有餐厅，第三楼建有观景台，从塔座到塔顶共有1711级阶梯。
+埃菲尔铁塔是世界著名建筑、法国文化象征之一、巴黎城市地标之一、巴黎最高建筑物。被法国人爱称为“铁娘子” 。。</p>
+ </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:40px; margin-left:206px; background-color:#09F; margin-top:20px; ">
+ <div style="float:left; width:300px; height:38px; margin-left:2px; background-color:#FFF; margin-top:1px; text-align:center;">
+ <h2><a href="#jdjj">景点简介</a></h2>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+ <h2><a href="#ls">人文历史/风俗习惯</a></h2> 
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#ts">特产推荐</a></h2>
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#jd">当地酒店</a></h2>
+  </div>
+ </div>
+ <div style="float:left; width:300px; height:38px; background-color:#09F;">
+  <div style="float:left; width:300px; height:38px; background-color:#FFF; margin-top:1px;  text-align:center; margin-left:2px;">
+  <h2><a href="#dp">用户点评</a></h2>
+  </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:1180px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:1176px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="jdjj" id="jdjj"></a>景点简介:</h1>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:1200px; background-color:#FFF; margin-left:100px;">
+  <h2>美誉：“世界著名建筑” 被法国人爱称为“铁娘子” </h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">埃菲尔铁塔是一座位于法国巴黎战神广场的铁制镂空塔，是巴黎最高的建筑物，也是法国的一个文化象征。铁塔建造之初是为了迎接世界博览会及纪念法国大革命100周年。铁塔以设计师法国著名建筑工程师埃菲尔的名字命名，并在北边的塔脚下为埃菲尔塑了一座半身铜像。埃菲尔铁塔总高324米（含天线24米），除了四个塔脚是用钢筋水泥外，全身都用钢铁构成。铁塔从1887年起建，分为三层，分别在离地面57米、115米和276米处，从塔座到塔顶共有1711级阶梯，超级壮观。三层眺望台虽然高度不同，却各有不同的视野，能带来不同的情趣。一个世纪以来，每年都有几百万人登临塔顶，俯瞰巴黎市容，叹为观止。
+
+</p>
+  <img src="埃菲尔铁塔景点简介1.PNG"
+     width="1000px" height="300px"  style="margin-left:120px;"/>
+     <p style="font-size:20px;">埃菲尔铁塔白天和晚上的感觉截然不同。白天观赏铁塔，钢铁结构分明，令人肃然起敬。很多人喜欢站在塔底下，从下往上拍摄铁塔，真是高大无比；但你也可以在塞纳河对岸的夏乐宫门口观赏埃菲尔铁塔，那是一个能纵览铁塔全景的观景台，拍摄角度绝佳.到了晚上，埃菲尔铁塔又是另外一副景象，探照灯散发出金色的光芒，数不尽的灯泡制造闪烁的效果，从夜幕降临起至凌晨1:00（夏季持续到凌晨2:00），每小时开始的头10分钟闪烁。碰到特殊节日和活动还会有特别的颜色，比如中国年时闪烁红色，欧盟日时闪烁蓝色。每年的7月14日法国国庆节都可以来铁塔下方的战神广场欣赏音乐会，观看国庆烟火。另外这里也是跨年倒数的受欢迎地点，不过届时人头攒动，需注意安全。
+</p>
+     <img src="埃菲尔铁塔景点简介2.PNG"
+     width="1000px" height="300px"  style="margin-left:120px;"/>
+     
+  </div>
+ </div>
+</div>
+<div style=" float:left; width:1506px; height:710px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:706px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:320px; height:45px; background-color:#3FF">
+  <h1><a name="ls" id="ls"></a>人文历史/风俗习惯:</h1>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:300px; background-color:#FFF; margin-left:100px;">
+  <h2>人文历史:</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">1886年11月，法国贸易部长批准了埃菲尔团队的最后建塔方案。
+1887年1月26日，埃菲尔铁塔正式开工。
+1887年2月24日，巴黎的文学艺术和建筑界参与抗议，其中包括法国作家莫泊桑，这份《反对修建巴黎铁塔》的抗议书，总共有300多著名人士签名。
+1889年3月31日，埃菲尔铁塔主建筑修建完工。埃菲尔铁塔成了1889年世博会最经典的建筑。
+1989年3月31日，埃菲尔铁塔整整100岁。
+2004年1月16日，为申办2012年夏季奥运会，巴黎市政府特意选择在埃菲尔铁塔上介绍他们为申奥的各项准备。 [2]</p>
+
+ </div>
+ <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+   <div style="float:left; width:1300px; height:200px; background-color:#FFF; margin-left:100px;">
+  <h2>风俗习惯:</h2>
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">有自己独特的风俗习惯和宗教信仰，他们一般会过一些宗教性节日和民俗类节日。宗教性的节日像是复活节、圣女贞德节。而民俗性的节日像是圣诞节、新年、劳动节、万圣节等等之类的活动。对节日非常的重视，每个节日来临前都会提前准备。
+  法国是一个实行接吻礼的国家，接吻礼有很讲究和严格的规定。有夫妻、朋友、亲戚等等之间的不同规范和形式。在一些社交和公共的场合，法国人也会有一些细节方面的讲究。</p>
+  </div>
+</div>
+</div>
+<div style=" float:left; width:1506px; height:1010px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:1006px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+   <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="ts" id="ts"></a>特产推荐:</h1>
+   <div style="float:left; width:1300px; height:300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+  <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <p style="font-size:20px;">法国黑松露、法国鹅肝，法国葡萄酒
+    
+    <p>&nbsp;</p>
+    <p style="font-size:20px;">法国鹅肝，法国特产之一，是用鸭科动物鹅的肝脏为主材制作而成。鹅肝多数重达600到900公克，用来作鹅肝的鹅并不多，而且体型要够大才能制造出足够重的鹅肝。除了重量外，鹅肝的颜色也很重要，受伤或有损坏的鹅肝是不被采用的。
+</p>
+ <p>&nbsp;</p>
+<img src="法国特产1.png" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+   </div>
+  </div>
+</div>
+ </div>
+ <div style=" float:left; width:1506px; height:3080px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3076px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="jd" id="jd"></a>当地酒店:</h1>
+    <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+     <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>巴黎卡地亚拉丁酒店 Hotel Quartier Latin Paris </h2>
+       <img src="法国酒店1.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+        <img src="法国酒店2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+         <img src="法国酒店3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+          <img src="法国酒店4.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>设施/服务:</h2>  <div style="float:right; width:300px; height:300px; background-color:#FFF; margin-right:300px; margin-top:10px;">
+  <b>酒店提示: <p>&nbsp;</p>
+酒店不接受18岁以下儿童在无监护人陪同的情况下单独入住。<p>&nbsp;</p>
+特殊酒店、房型不接受儿童入住，请以酒店告知为准。<p>&nbsp;</p>
+入住期间需支付当地旅游税，部分房价不包含此费用，需客人另付前台。<p>&nbsp;</p>
+2019年1月1日起，巴黎城市税进行上调。具体金额以办理入住时酒店前台告知为准。<p>&nbsp;</p>
+
+
+</b>
+                    </div>
+      
+  <b style="float:left; margin-left:200px;">基础设施
+
+无线网络 <p>&nbsp;</p> 烘干机
+
+生活必需品  <p>&nbsp;</p> 暖气
+
+洗衣机  <p>&nbsp;</p> 厨房用品
+
+厨房  <p>&nbsp;</p> 早餐
+
+床和浴室  <p>&nbsp;</p> 吹风机
+
+衣架  <p>&nbsp;</p> 洗发水
+
+安全设施  <p>&nbsp;</p> 灭火器
+
+一氧化碳报警器  <p>&nbsp;</p> 行李寄存
+
+前台保险柜
+</b>
+
+     </div>
+   </div>
+   
+ </div>
+ </div>
+ <div style=" float:left; width:1506px; height:3630px; margin-left:206px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:3626px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+    <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+    <p>&nbsp;</p>
+  <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+  <h2>马克西姆歌剧院酒店 Hôtel Maxim Opera </h2>
+   <img src="法国酒店1.1.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+        <img src="法国酒店1.2.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+         <img src="法国酒店1.3.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+          <img src="法国酒店1.4.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <img src="法国酒店1.5.jpg" width="1000px" height="600px"  style="margin-left:120px; margin-top:20px;"/>
+           <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+<h2>设施/服务:</h2>  <div style="float:right; width:300px; height:300px; background-color:#FFF; margin-right:300px; margin-top:10px;">
+<b>酒店提示:<p>&nbsp;</p>
+酒店不接受18岁以下儿童在无监护人陪同的情况下单独入住。<p>&nbsp;</p>
+特殊酒店、房型不接受儿童入住，请以酒店告知为准。<p>&nbsp;</p>
+入住期间需支付当地旅游税，部分房价不包含此费用，需客人另付前台。<p>&nbsp;</p>
+2019年1月1日起，巴黎城市税进行上调。具体金额以办理入住时酒店前台告知为准。<p>&nbsp;</p>
+入住/退房，入住时间: 15:00后 ·
+<p>&nbsp;</p>退房时间: 12:00
+</b>
+     </div>
+      <b style="float:left; margin-left:200px;">基础设施
+
+无线网络 <p>&nbsp;</p> 熨斗
+
+有线电视 <p>&nbsp;</p> 生活必需品
+
+书桌/工作区域 <p>&nbsp;</p> 综合设施
+
+电梯 <p>&nbsp;</p> 厨房用品
+
+厨房 <p>&nbsp;</p> 基本厨具
+
+盘子和餐具 <p>&nbsp;</p>冰箱
+
+炉灶 <p>&nbsp;</p> 房客使用权限
+
+密码锁 <p>&nbsp;</p> 独立入口
+
+    </div>
+  </div>
+  </div>
+  <div style=" float:left; width:1506px; height:710px; margin-left:6px; background-color:#09F; margin-top:2px; ">
+ <div style=" float:left; width:1502px; height:706px; margin-left:2px; background-color:#FFF; margin-top:2px;">
+  <div style=" float:left; width:160px; height:45px; background-color:#3FF">
+  <h1><a name="dp" id="dp"></a>用户点评:</h1>
+  <div style="float:left; width:1300px; height:1300px; background-color:#FFF; margin-left:100px; margin-top:10px;">
+   <p>&nbsp;</p>
+            <p> ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</p>
+            <b>  5分 <p>&nbsp;</p>
+法国的地标建筑，近距离接触埃菲尔铁塔还是超级壮观的 <p>&nbsp;</p>
+_ceair****74837   2019-09-25 18:51</b>
+ <p>&nbsp;</p> <p>&nbsp;</p>
+   5分<p>&nbsp;</p>
+值得一去 建议购买电梯票 25欧元一张<p>&nbsp;</p>
+Canshow   2019-09-25 16:59
+<p>&nbsp;</p><p>&nbsp;</p>
+4分 <p>&nbsp;</p>
+埃菲尔铁塔～ 巴黎标志性建筑之一。但凡来巴黎，肯定要看的～提前了解一下背景再来看，收获肯定够大，虽然乍一看和巴黎不太搭，但是还是很好看的，而且建筑设计之精妙也是值得看的～坐塞纳河游船看铁塔就很漂亮了，拍照也好看～ <p>&nbsp;</p>william0818   2019-09-24 15:09
+<p>&nbsp;</p><p>&nbsp;</p>
+ 4分<p>&nbsp;</p>
+埃菲尔铁塔不仅仅是巴黎的象征，更是法国所为人熟知的一个重要的标志性的建筑。这里的铁塔建在一百多年前，可想而知当时有多么的伟大，真的是建筑的杰作<p>&nbsp;</p>
+royal_tian01   2019-09-11 22:13
+        </div>
+  </div>
+  </div>
+  </div>
+</div>
+</body>
+</html>

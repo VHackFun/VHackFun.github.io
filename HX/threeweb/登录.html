@@ -1,0 +1,100 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>登录</title>
+	<link type="text/css" href="../twoweb/导航栏.css" rel="stylesheet">
+	<link rel="icon" href="../image/logo.ico">
+<style type="text/css">
+body{
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background-image: url("../image/The witcher3/1558102924263_mh1558313705623.jpg");
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+.box{
+	width:300px;
+	padding:40px;
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	background:rgba(0,0,0,0.7);
+	text-align:center;
+}
+.box h1{
+	color:white;
+	text-transform:uppercase;
+	font-weight:500;
+	
+}
+.box input[type ="text"],.box input[type = "password"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid #3FF;
+	padding:14px 10px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;	
+}
+.box input[type ="text"]:focus,.box input[type = "password"]:focus{
+	width:280px;
+	border-color:#0F0;
+}
+.box input[type ="submit"]{
+	border:0;
+	background:none;
+	display:block;
+	margin:20px auto;
+	text-align:center;
+	border:2px solid  #0F0;
+	padding:14px 40px;
+	width:200px;
+	outline:none;
+	color:white;
+	border-radius:24px;
+	transition:0.25s;	
+}
+.box input[type ="submit"]:hover{
+	background:#0F0;
+}
+</style>
+	<script>
+	function over(){
+	document.getElementById('search').src="../image/Search2.png";
+}
+	function out(){
+	document.getElementById('search').src="../image/Search1.png";
+}
+</script>
+</head>
+	<section class="nav">
+    <div class="logo"><a href="#"><img src="../image/logo.png" width="236" height="70" alt="Ambition World"/></a></div>
+	<img src="../image/Search1.png" width="70" height="70" alt="" id="search" onmouseover="over()" onmouseout="out()"/>
+		<form>
+			<input type="text" name="search" id="searchtext">
+		</form>
+		<ul>
+			<li><a href="../threeweb/注册.html">注册</a></li>
+        	<li><a href="../threeweb/登录.html">登录</a></li>
+        	<li><a href="../threeweb/游戏.html">游戏</a></li>
+        	<li><a href="../oneweb/home.html">首页</a></li>
+		</ul>
+	  	</section>
+<body>
+<form class="box" >
+	<h1>登录</h1>
+    <input type="text" placeholder="用户姓名" maxlength="12" id="name" required="required"/>
+    <input type="password" placeholder="登入密码" maxlength="18" id="password" required="required"/>
+    <input type="submit" onclick="me()" value="登入"/>
+    <input type="submit" value="注册"  />
+</form>
+</body>
+</html>

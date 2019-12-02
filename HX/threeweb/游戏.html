@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>DOTA2</title>
+		<link type="text/css" href="../twoweb/导航栏.css" rel="stylesheet">
+		<link rel="icon" href="../image/logo.ico">
+		<style type="text/css">
+	*{
+			margin: 0;
+			padding: 0;
+	}
+head{
+	width: 100%;
+}
+body{
+	background-image: url("../image/Game1.jpg");
+	background-color: rgba(2,2,2,0.4);
+	background-attachment: fixed;
+	height: 1000px;
+	color:  #FFFFFF;
+	font-family: "微软雅黑", sans-serif;
+}
+#body1{
+	width: 76%;
+	margin: auto;
+}
+/* Style the tab */
+div.tab {
+	margin-top: 35px;
+    overflow: hidden;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Style the buttons inside the tab */
+div.tab button {
+    background-color: inherit;
+    float: left;
+	color: #FFFFFF;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+div.tab button:hover {
+    background-color: white;
+	color: #FFCC33;
+}
+
+/* Create an active/current tablink class */
+div.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display:none;
+    padding: 6px 12px;
+    -webkit-animation: fadeEffect 1s;
+    animation: fadeEffect 1s;
+}
+
+/* Fade in tabs */
+@-webkit-keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes fadeEffect {
+    from {opacity: 0;}
+    to {opacity: 1;}
+    }
+    dl{
+    	margin: 0;
+    	padding: 0;
+    	float: left;
+    	margin-right: 30.5px;
+    	margin-bottom: 20px;
+    	list-style: none;
+    }
+    dt{
+    	width: 250px;
+    	height: 150px;
+ 
+    }
+    dd{
+    	width: 230px;
+    	padding:10px;
+    
+    }
+   
+    .thisp{
+		color:RGBa(255,255,255,0.8);
+    	font-size: 15px;
+    	font-family:"arial, helvetica, sans-serif";
+    }
+	span{
+		color:RGBa(255,255,255,0.8);
+			}
+    .dversion{
+    	position: fixed;
+    	left: 0;
+    	top: 0;
+    }
+    .dversion a{
+    	font-size: 18px;
+    	text-align: center;
+    	margin: 0 5px;
+    	float: left;
+    	border:1px solid #ccc;
+    	text-decoration: none;
+    	display: none;
+    }
+	dl a:link{
+		color: white;
+		text-decoration: none;
+		transition-property: color;
+		transition-duration: 0.5s;
+		-webkit-transition-property:color;
+		-webkit-transition-property:0.5s;
+}
+	dl a:visited{
+	color: white;
+}
+dl a:hover{
+	color: #ffcc33;
+}
+	</style>
+		<script type="text/javascript">
+				window.onload=function(){
+					document.getElementById("one").click();
+				}
+			function over(){
+	document.getElementById('search').src="../image/Search2.png";
+}
+	function out(){
+	document.getElementById('search').src="../image/Search1.png";
+}
+	function openCity(evt, cityName) {
+    var i, tabcontent, tablinks;
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+    }
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace("active", "");
+    }
+    document.getElementById(cityName).style.display = "block";
+    evt.currentTarget.className += " active";
+	}
+		</script>
+	<section class="nav">
+    <div class="logo"><a href="#"><img src="../image/logo.png" width="236" height="70" alt="Ambition World"/></a></div>
+	<img src="../image/Search1.png" width="70" height="70" alt="" id="search" onmouseover="over()" onmouseout="out()"/>
+		<form>
+			<input type="text" name="search" id="searchtext">
+		</form>
+		<ul>
+			<li><a href="../threeweb/注册.html">注册</a></li>
+        	<li><a href="../threeweb/登录.html">登录</a></li>
+        	<li><a href="游戏.html">游戏</a></li>
+        	<li><a href="../oneweb/home.html">首页</a></li>
+		</ul>
+	  	</section>
+	</head>
+	<body>
+		
+		<div id="body1">
+			<h1>热评游戏</h1>
+	<div class="tab">
+	  	<button class="tablinks" onclick="openCity(event, 'London')" id="one">推荐</button>
+	  	<button class="tablinks" onclick="openCity(event, 'Paris')">PC</button>
+	  	<button class="tablinks" onclick="openCity(event, 'Tokyo')">PS4</button>
+	  	<button class="tablinks" onclick="openCity(event, 'me')">NS</button>
+	  	<button class="tablinks" onclick="openCity(event, 'way')">XBONE</button>
+	</div>
+	
+	<div id="London" class="tabcontent">
+	<dl >
+		<a href="../twoweb/GTA5.html">
+		<dt>
+			<img src="../image/Grand theft Auto V/1558098070543.png" width="250" height="150"/>
+		</dt>
+		
+			<dd>
+			<h4>侠盗猎车手5</h4>
+			<p class="thisp">PC / PS4 / Xboxone / PS3 /...</p>
+			<span>炫酷</span> <span>/</span> <span>挑战</span> <span>/</span> <span>剧情</span> <span>/</span> <span>奇幻</span>
+			</dd>
+		</a>
+	</dl>
+	
+	<dl>
+		<a href="../twoweb/DOTA2.html">
+		<dt>
+			<img src="../image/DOTA 2/1558540422511.png" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>刀塔2</h4>
+			<p class="thisp">PC</p>
+			<span>奇幻</span> <span>/</span> <span>竞技</span>
+		</dd>
+		</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/Minecraft.html">
+		<dt>
+			<img src="../image/MINECRAFT/1558544591705.png"  width="250" height="150"/>
+		</dt>
+		<dd>
+			<h4>我的世界</h4>
+			<p class="thisp">PC / NS / PS4 / Xboxone... </p>
+			<span>多人</span> <span>/</span> <span>生存</span> <span>/</span> <span>联机</span> <span>/</span> <span>沙河</span>
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/怪物猎人.html">
+		<dt>
+			<img src="../image/Monster hunter world/1558541473036.png" width="250" height="150"/>
+		</dt>
+		<dd>
+			<h4>怪物猎人: 世界</h4>
+			<p class="thisp">PC / NS / PS4 / Xboxone</p>
+			<span>对战</span> <span>/</span> <span>探索</span> <span>/</span> <span>狩猎</span><span>/</span><span>人机</span>
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/Portal2.html">
+		<dt>
+			<img src="../image/PORTAL 2/1558313359664_mh1558315184097.jpg" width="250" height="150"/>
+		</dt>
+		<dd>
+			<h4>传送门2</h4>
+			<p class="thisp">PC / PS3 / Xbox</p>
+			<span>科幻</span> 
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/PUBG.html">
+		<dt>
+			<img src="../image/PUBG/1558543857087.png" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>绝地求生</h4>
+			<p class="thisp">PC / PS4 / Xboxone</p>
+			<span>生存</span> <span>/</span> <span>第三人称</span> <span>/</span> <span>主视角</span> <span>/</span> <span>竞技</span>
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/老滚五.html">
+		<dt>
+			<img src="../image/The elder scrolls V Shyrim/1558543272911.png" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>上古卷轴 5 </h4>
+			<p class="thisp">PC</p>
+			<span>角色扮演</span> 
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/巫师3.html">
+		<dt>
+			<img src="../image/The witcher3/巫师3.jpg" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>巫师3：狂猎</h4>
+			<p class="thisp">PC / NS / PS4 / Xboxone</p>
+			<span>3A大作</span> <span>/</span> <span>策略</span> <span>/</span> <span>奇幻</span> <span>/</span> <span>开放世界</span>
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/彩虹六号.html">
+		<dt>
+			<img src="../image/彩虹六号围攻.jpg" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>彩虹六号:围攻</h4>
+			<p class="thisp">PC / PS4 / XboxOne</p>
+			<span>炫酷</span> <span>/</span> <span>挑战</span> <span>/</span> <span>剧情</span> <span>/</span> <span>奇幻</span>
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/WARFRAME.html">
+		<dt>
+			<img src="../image/warframe1.jpg" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>星际战甲</h4>
+			<p class="thisp">PC / NS / PS4 / Xboxone</p>
+			<span>合作</span> <span>/</span> <span>对战</span> <span>/</span> <span>机甲</span> <span>/</span> <span>科幻</span>
+		</dd>
+			</a>
+	</dl>
+	
+	<dl >
+		<a href="../twoweb/CS GO.html">
+		<dt>
+			<img src="../image/CS GO/1558541029565.png" width="250" height="150" />
+		</dt>
+		<dd>
+			<h4>反恐精英:全球攻势</h4>
+			<p class="thisp">PC / Xboxone / Linux...</p>
+			<span>第一人称射击游戏</span>
+		</dd>
+			</a>
+	</dl>
+ </div>
+ 
+  	<div id="Paris" class="tabcontent">
+		<h1>敬请期待</h1>
+	</div>
+
+	<div id="Tokyo" class="tabcontent">
+	  	<h1>敬请期待</h1>
+	</div>
+	<div id="me" class="tabcontent">
+		<h1>敬请期待</h1>
+	</div>
+	<div id="way" class="tabcontent">
+		<h1>敬请期待</h1>
+	</div>
+		</div>
+	</body>
+	<div id="d">
+	<p id="c">资料出处<a  class="a1" href="https://gouhuo.qq.com/" target="_blank">@篝火营地</a><br>软件1802班期末设计</p>
+	</div>
+</html>

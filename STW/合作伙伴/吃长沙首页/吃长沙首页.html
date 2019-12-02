@@ -1,0 +1,560 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>吃长沙首页</title>
+<style>
+	*{
+		margin: 0px;
+		padding: 0px;
+	}
+	.thetop{
+		height: 70px;
+		background-color: white;
+		width: 2000px;
+	}
+	.top-img{
+		background: url(吃长沙的副本.png);
+		background-size: 100%;
+		float: left;
+		height: 70px;
+		width: 150px;
+		margin-left: 100px;
+	}
+	.top-text{
+		text-align: center;
+		float: left;
+		height: 65px;
+		width: 160px;
+		line-height: 65px;
+		font-size: 25px;
+		color: black;
+	}
+/*	多出来的边框大小要在hover的高中剪掉三个边框大小，才能保持鼠标移动前后的文字位置不变*/
+	.top-text:hover{
+		text-align: center;
+		float: left;
+		height: 55px;
+		width: 160px;
+		line-height: 55px;
+		font-size: 25px;
+		color: #E86529;
+		border-width: 10px;
+		border-top: 5px solid #E86529;
+	}
+	.main-contens{
+		height: 1500px;
+/*		background-color: #636363;*/
+		margin: 0 auto;
+		width: 1500px;
+		position: relative;
+	}
+	.left-contens{
+		background-color: white;
+		width: 350px;
+		height: 700px;
+		margin-left: 10px;
+		margin-top: 20px;
+		float: left;
+		position: absolute;
+	}
+	.right-img{
+/*		background-color: white;*/
+		width: 1090px;
+		height: 700px;
+		float: right;
+		margin-right: 20px;
+		margin-top: 20px;
+/*
+		overflow: hidden;
+		position: relative;
+*/
+	}
+/*
+	@keyframes dho {
+        0%{}
+        20%{transform: translateX(0px)}
+        30%{transform: translateX(-1090px)}
+        40%{transform: translateX(-1090px)}
+        50%{transform: translateX(-2180px)}
+        60%{transform: translateX(-2180px)}
+        70%{transform: translateX(-3270px)}
+        80%{transform: translateX(-3270px)}
+        90%{transform: translateX(-4360px)}
+        100%{transform: translateX(-4360px)}
+    }
+*/
+	.right-img-1{
+		height: 500px;
+		width: 1090px;
+/*		float: left;*/
+/*		animation: 20s dho infinite;*/
+	}
+/*	dropdown设置下拉列表,接着sh设置hover鼠标移动显示块级元素*/
+	.dropdown{
+		position: relative;
+		float: left;
+		z-index: 10000;
+	}
+	.dropdown:hover .dropdown-content {display: block;}
+/*	dropdown-content说明下拉列表的内容*/
+	.dropdown-content{
+		display: none;
+		float: left;
+		position: fixed;
+		box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+		margin-top: 60px;
+		width: 200px;
+		font-size: 20px;
+		background-color: white;
+		position: absolute;
+/*		透明度调整*/
+		opacity: 0.85;
+	}
+	.dropdown-content a {
+		display: block;
+		text-align: center;
+		height: 50px;
+		line-height: 50px;
+	}
+/*	鼠标移动后的颜色变化*/
+	.dropdown-content a:hover{
+		background-color: rgba(172,172,172,0.5);
+	}
+	.drop-a{text-decoration: none;color: black;}
+	.drop-a:hover{text-decoration: none;color: #E86529;}
+	.text-input{
+		height: 35px;
+		width: 400px;
+		margin-top: 13px;
+		border: 0px;
+		background-color: #DDDDDD;
+		border-radius: 5px;
+		font-size: 18px;
+		float: left;
+		position: relative;
+	}
+	.search-img{
+		height: 50px;
+		width: 35px;
+		float: left;
+/*		color: #DDDDDD;*/
+		margin-top: 5px;
+		overflow: hidden;
+	}
+	.book-img{
+		float: left;
+		height: 28px;
+	}
+	.img-font{
+		font-size: 22px;
+		line-height: 28px;
+		padding-left: 40px;
+	}
+/*	字体对不上的问题，更改padding-left值*/
+	.left-downimg{
+		margin-top: 25px;
+		font-size: 20px;
+		background-color: rgba(239,239,239,0.55);
+		line-height: 45px;
+		height: 45px;
+		border-radius: 3px;
+		padding-left: 40px;
+	}
+	.left-downimg:hover{
+		margin-top: 25px;
+		font-size: 20px;
+		background-color: rgba(229,183,130,0.30);
+		line-height: 45px;
+		height: 45px;
+		border-radius: 3px;
+		padding-left: 36px;
+/*		width: 150px;*/
+		color: rgba(236,127,5,1.00);
+		border-left: 4px solid rgba(236,127,5,1.00);
+	}
+	.left-downimg-1{
+		margin-top: 10px;
+		font-size: 20px;
+		background-color: rgba(239,239,239,0.55);
+		line-height: 45px;
+		height: 45px;
+		border-radius: 3px;
+		padding-left: 40px;
+	}
+	.left-downimg-1:hover{
+		margin-top: 10px;
+		font-size: 20px;
+		background-color: rgba(229,183,130,0.30);
+		line-height: 45px;
+		height: 45px;
+		border-radius: 3px;
+		padding-left: 36px;
+		color: rgba(236,127,5,1.00);
+		border-left: 4px solid rgba(236,127,5,1.00);
+	}
+/*	徽章图片设置*/
+	.badge-img{
+		float: left;
+		height: 45px;
+	}
+	.badge-img-font{
+		font-size: 22px;
+		line-height: 40px;
+		padding-left: 50px;
+		color: rgba(236,127,5,1.00);
+	}
+	.paihang{margin-left: 10px;}
+	.num-img{float: left;height: 30px;}
+	.num-img-font{
+		font-size: 25px;
+		padding-left: 50px;
+		line-height: 30px;
+		text-decoration: none;
+	}
+	.line{
+		height: 2.5px;
+		background-color: rgba(239,239,239,0.55);
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+	.num-img-1{
+		height: 20px;
+		float: right;
+		margin-top: 5px;
+	}
+	.right-img img{height: 500px;width: 1090px;}
+	.text-a{text-decoration: none;color: black;}
+	.text-a:hover{text-decoration: none;color: rgba(240,146,42,1.00);}
+	.right-content{
+		float: right;
+		background-color: white;
+		height: 700px;
+		width: 1090px;
+		margin-top: 10px;
+		margin-right: 20px;
+		position: relative;
+	}
+	.刀叉{
+		height: 40px;
+		float: left;
+		width: 40px;
+	}
+	.text1{float: left;font-size: 30px;font-weight: bold;line-height: 40px;}
+	.block1{
+		height: 40px;
+		width: 1090px;
+		margin-top: 50px;
+	}
+	.text2{
+		float: left;
+		font-size: 18px;
+		background-color: rgba(243,163,75,1.00);
+		color: white;
+		width: 60px;
+		text-align: center;
+		margin-left: 340px;
+		margin-top: 7.5px;
+	}
+	.text3{
+		float: left;
+		font-size: 18px;
+/*		background-color: rgba(243,163,75,1.00);*/
+		color: black;
+		width: 110px;
+		text-align: center;
+		margin-left: 10px;
+		margin-top: 7.5px;
+	}
+	.text3:hover{
+		float: left;
+		font-size: 18px;
+		background-color: rgba(243,163,75,1.00);
+		color: white;
+		width: 110px;
+		text-align: center;
+		margin-left: 10px;
+		margin-top: 7.5px;
+	}
+	.block2{height: 30px;}
+	.block3{height: 65px;}
+	.text4{font-size: 23px;float: left;}
+	.text5{float: left;text-decoration: none;color: rgba(243,163,75,1.00);font-size: 16px;margin-top: 5px;}
+	.text6{float: left;font-size: 16px;margin-top: 5px;text-decoration: none;color: rgba(125,75,76,1.00);}
+	.text6:hover{float: left;font-size: 16px;margin-top: 5px;text-decoration: none;color: rgba(243,163,75,1.00);}
+	.line1{height: 16px;background-color: rgba(134,134,134,0.55);width: 2px;margin: 8px 10px 0 10px;float: left;}
+	.block-img{float: left;}
+	.text7{float: left;font-size: 24px;margin-left: 10px;color: rgba(243,163,75,1.00);}
+	.start-img1{height: 20px;margin: 5px 0 0 200px;}
+	.start-img2{height: 20px;margin: 5px 0 0 0px;}
+	.num{float: right;font-size: 20px;color: blue;}
+	.分{float: right;font-size: 16px;margin-top: 4px;}
+	.NO-1{font-size: 30px;font-weight: bold;color: cornflowerblue;float: left;margin-left: 10px;display: block;}
+	.text8{float: left;margin: 10px 0 0 0;font-size: 20px;}
+	.text9{font-size: 50px;color: #DFDFDF;float: left;margin: 0 20px 0 10px;}
+	.text10{font-size: 25px;text-align: center;}
+	.text11{font-size: 50px;color: #DFDFDF;float: right;}
+	.down-content{
+		height: 90px;
+		width: 2000px;
+		background-color: #636363;
+		position: absolute;
+	}
+	.text12{text-align: center;color: white;font-size: 20px;top: 0;margin-top: 10px;}
+	.text-a1{float: left;margin: 20px 0px 0 30px;font-size: 20px;color: #E86529;}
+	</style>
+	<title>Bootstrap 实例 - 轮播（Carousel）插件的标题</title>
+	<link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+	<div id="导航栏" class="thetop" >
+		<a><div id="网站logo" class="top-img"></div></a>
+		<a><div id="首页" class="top-text">首页</div></a>
+		
+			<div id="下拉列表" class="dropdown">
+				<div id="长沙美食攻略" class="top-text">长沙美食攻略</div>
+				<div id="下拉列表内容" class="dropdown-content">
+				<a class="drop-a">长沙老味道</a>
+				<a class="drop-a">最火爆小吃街</a>
+				<a class="drop-a">超气人小吃</a>
+				<a class="drop-a">最地道湘菜馆</a>
+				</div>
+			</div>
+		<a><div id="桃饱网" class="top-text">桃饱网</div></a>
+		<a><div id="省途网" class="top-text">省途网</div></a>
+		<a><div id="黄金体验" class="top-text">黄金体验</div></a>
+		<div>
+			<input type="text" class="text-input" placeholder="搜索美食(虽然不能用但是还能看看)">
+			<div id="搜索按钮" class="search-img"><img src="搜索按钮.png"></div>
+			<a href="#"><p class="text-a1">登录</p></a>
+			<a href="#"><p class="text-a1">注册</p></a>
+		</div>
+	</div>
+	<div id="主要内容" class="main-contens">
+		<div id="左侧排行" class="left-contens">
+			<div id="长沙美食攻略图标" style="margin: 30px;">
+				<img src="书签图标.png" class="book-img">
+				<p id="文字长沙美食攻略" class="img-font">长沙美食攻略</p>
+				<div class="left-downimg"><p>长沙老味道</p></div>
+				<div class="left-downimg-1"><p>最火爆小吃街</p></div>
+				<div class="left-downimg-1"><p>超气人小吃</p></div>
+				<div class="left-downimg-1"><p>最地道湘菜馆</p></div>
+			</div>
+			<div id="长沙特色美食排行" style="margin: 25px;padding-top: 10px;">
+				<img src="徽章图标.png" class="badge-img">
+				<p id="文字排行" class="badge-img-font">长沙特色美食排行</p>
+				<div id="线1" class="line"></div>
+					<div id="排行1" class="paihang">
+						<img src="排名数字1.png" class="num-img">
+						<img src="人气值555.png" class="num-img-1">
+						<a class="text-a"><p class="num-img-font">臭豆腐</p></a>
+					</div>
+				<div id="线2" class="line"></div>
+				<div id="排行2" class="paihang">
+					<img src="排名数字2.png" class="num-img">
+					<img src="人气值544.png" class="num-img-1">
+					<a class="text-a"><p class="num-img-font">糖油粑粑</p></a>
+				</div>
+				<div id="线3" class="line"></div>
+				<div id="排行3" class="paihang">
+					<img src="排名数字3.png" class="num-img">
+					<img src="人气值444.png" class="num-img-1">
+					<a class="text-a"><p class="num-img-font">口味虾</p></a>
+				</div>
+				<div id="线4" class="line"></div>
+				<div id="排行4" class="paihang">
+					<img src="排名数字4.png" class="num-img">
+					<img src="人气值233.png" class="num-img-1">
+					<a class="text-a"><p class="num-img-font">剁椒鱼头</p></a>
+				</div>
+				<div id="线5" class="line"></div>
+			</div>
+		</div>
+		<div id="右边图片滚动" class="right-img">
+			<div id="myCarousel" class="carousel slide">
+				<!-- 轮播（Carousel）指标 -->
+					<ol class="carousel-indicators">
+						<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+						<li data-target="#myCarousel" data-slide-to="1"></li>
+						<li data-target="#myCarousel" data-slide-to="2"></li>
+						<li data-target="#myCarousel" data-slide-to="3"></li>
+					</ol>   
+					<!-- 轮播（Carousel）项目 -->
+					<div class="carousel-inner" style="height: 700px;width: 1090px;">
+						<div class="item active">
+							<img src="臭豆腐图片.jpg" alt="First slide" height="700px" width="1090px;">
+						</div>
+						<div class="item" style="height: 700px;width: 1090px;">
+							<img src="糖油粑粑.jpg" alt="Second slide" height="720px" width="1090px;">
+						</div>
+						<div class="item">
+							<img src="口味虾.jpg" alt="Third slide" height="700px" width="1090px;">
+						</div>
+						<div class="item">
+							<img src="剁椒鱼头.png" alt="Fourth slide" height="700px" width="1090px;">
+						</div>
+					</div>
+					<!-- 轮播（Carousel）导航 -->
+						<a class="left carousel-control" style="height: 700px" href="#myCarousel" role="button" data-slide="prev">
+	    					<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+	   	 					<span class="sr-only">Previous</span>
+						</a>
+						<a class="right carousel-control" href="#myCarousel" role="button" data-slide="next" style="height: 700px">
+	   	 					<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+	    					<span class="sr-only">Next</span>
+						</a>
+			</div>
+		</div>
+		<div id="右下方店铺推荐" class="right-content">
+			<div class="block1">
+				<img src="刀叉图标1.png" class="刀叉">
+				<p class="text1">长沙全部美食推荐</p>
+				<a href="#"><p class="text2">默认</p></a>
+				<a href="#"><p class="text3">按用户评分</p></a>
+				<a href="#"><p class="text3">按点评数</p></a>
+				<a href="#"><p class="text3">按达人推荐</p></a>
+			</div>
+			<div class="line"></div>
+			<div id="特色" class="block2">
+				<p class="text4">特色：</p>
+				<a href="#"><p class="text5">不限</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">大家都爱吃</p></a>
+				<div class="line1"></div>
+				<a><p class="text6">人气湘菜馆</p></a>
+				<div class="line1"></div>
+				<a><p class="text6">百年老店·特色小吃</p></a>
+				<div class="line1"></div>
+				<a><p class="text6">香辣口味虾</p></a>
+				<div class="line1"></div>
+				<a><p class="text6">嗦一碗米粉</p></a>
+				<div class="line1"></div>
+				<a><p class="text6">睡什么觉！出来吃夜宵！</p></a>
+				<div class="line1"></div>
+				<a><p class="text6">最正宗臭豆腐</p></a>
+			</div>
+			<div class="line"></div>
+		  <div id="分类" class="block3">
+				<p class="text4">分类：</p>
+				<a href="#"><p class="text5">不限</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">快餐</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">川菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">连锁/加盟</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">酒吧</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">贵州菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">主题</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">外卖/窗口</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">海南菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">下午茶</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">小酒馆</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">菜馆</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">摊位</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">早午餐</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">特色</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">湘菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">江浙菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">粤菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">新疆菜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">港式</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">西餐</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">日本料理</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">韩国料理</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">东南亚美食</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">海鲜</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">火锅</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">小吃</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">烧烤</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">粥店面食</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">咖啡饮品</p></a>
+			</div>
+			<div class="line"></div>
+		  <div id="商圈" class="block3">
+				<p class="text4">商圈：</p>
+				<a href="#"><p class="text5">不限</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">五一广场周边</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">天心阁</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">湖南省博物馆</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">岳麓山</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">雨花区</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">裕湘纱厂</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">长沙南站</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">马王堆</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">岳麓区</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">世界之窗</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">汽车北站</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">黄花机场周边</p></a>
+				<div class="line1"></div>
+				<a href="#"><p class="text6">大学区</p></a>
+			</div>
+			<div class="line"></div>
+			<div id="店铺推荐">
+				<img src="手工茶饼坊.png" class="block-img">
+					<img src="星星1.png" class="start-img1">
+					<img src="星星1.png" class="start-img2">
+					<img src="星星1.png" class="start-img2">
+					<img src="星星1.png" class="start-img2">
+					<img src="星星1.png" class="start-img2">
+				<p class="text7">长沙欧阳漫手工茶饼坊(太平老街店)</p>
+				<p class="分">分</p>
+				<p class="num">5.0</p><br>
+				<div style="display: block;">
+				<br>
+				<p class="NO-1">NO.1</p><br><br>
+				<p class="text8">商家宣传语:</p>
+				</div><br><br>
+				<p class="text9">“</p>
+				<p class="text10">人生若只如初见，何事秋风悲画扇。</p>
+				<p class="text11">”</p>
+			</div>
+	  </div>
+	</div>
+	<div id="最下面链接" class="down-content">
+		<p class="text12">欧阳漫小组出品，必属精品！（不愧是我）</p>
+		<p class="text12">求求给打钱吧，做的要吐血了</p>
+	</div>
+</body>
+</html>
